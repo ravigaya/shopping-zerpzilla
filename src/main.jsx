@@ -13,6 +13,7 @@ import Body from './components/Body.jsx'
 import ProductList from './components/ProductList.jsx'
 import Cart from './components/Cart.jsx'
 import Homepage from './components/Homepage.jsx'
+import ProductPage from './components/ProductPage.jsx'
 
 
 //import Myprofile from './components/Myprofile.jsx'
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
       {
         path: "/products/:category",
         element: <ProductList/>,
+      },
+      {
+        path: "/product/:id",
+        element: <ProductPage/>,
       },
     
     ],

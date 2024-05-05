@@ -1,25 +1,29 @@
  import React from "react";
+import ProductList from "./ProductList";
 
- const ItemList = (props) => {
-  console.log("product item ------------", props.productItem);
+ const ItemList = ({productItemData}) => {
+ // console.log("product item ------------", props.productItemData);
   return (
     <>
-     <div class="card mb-3" style="max-width: 540px;">
-  <div class="row g-0">
-    <div class="col-md-4">
-      <img src=''class="img-fluid rounded-start" alt="..."/>
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title">title</h5>
-        <p class="card-text">text</p>
-        <p class="card-text"><small class="text-body-secondary">Description</small></p>
-      </div>
-    </div>
-  </div>
-</div> 
-      <p>This is Accordian List</p>
-        <div>{props.productItem.description}</div>;
+        
+         <div className="productList">
+                
+                <div className="card mb-3" >
+            <div className="row g-0">
+                <div className="col-md-4">
+                <img src= {productItemData.image} className="card-img-top card-img img-fluid px-2 py-2"  alt="..."/>
+                </div>
+                <div className="col-md-8">
+                <div className="card-body">
+                    <h5 className="card-title">{productItemData.title}</h5>
+                    <p className="card-text">{productItemData.price}</p>
+                  <p className="card-text"><small className="text-body-secondary">{productItemData.Description}</small></p> 
+                </div>
+                </div>
+            </div>
+            </div> 
+
+            </div>
     </>
   );
 };

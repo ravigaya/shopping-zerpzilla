@@ -41,12 +41,9 @@ export const Homepage =()=> {
     return category.length === 0 ? <Shimmer/> : (
      <>
 
-          <div style={{margin:'10px', }}>
-
-          
+          <div style={{margin:'10px', }}>  
            {category.map((x,i)=>
-           
-      <Link  to={`/products/${x}`} key={i}>         
+      <Link to={`/products/${x}`} key={x.id}>         
          <Categorycard category={x} />
        </Link>  
         
