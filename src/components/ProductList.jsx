@@ -38,11 +38,9 @@ const ProductList = () => {
     );
     setFilteredProductList(filteredList);
   };
-  console.log('filteredProductList',filteredProductList)
+  console.log('filteredProductList',filteredProductList);
 
-
-    
-  return filteredProductList (
+  return  (
     <>
     <div className='py-2 px-3 mx-3 my-4'>
     <Searchbar onChange={handleSearch}/>
@@ -58,10 +56,7 @@ const ProductList = () => {
         </div>
       ))}
       
-      {
-        
-      }
-      <h3>this is product {category}</h3>
+
     </>
     
      )

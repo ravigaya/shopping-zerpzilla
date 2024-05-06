@@ -1,13 +1,20 @@
-import { useState } from 'react'
+import { useState,useContext } from 'react'
 // import {resObj} from '../utils/mockdata';
 import { Link } from 'react-router-dom';
 import {useOnlineStatus} from '../utils/useOnlineStatus';
 import { BRAND_LOGO } from '../utils/constant';
+import cartdata from '../utils/cartdata';
+
 
 export const Heading = ()=>{ 
+
+   const{cartval} = useContext(cartdata)
+   console.log('cartcount',cartval);
    const status = useOnlineStatus();
+
     console.log('Status',status)
     return (
+
       <>
        <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
@@ -28,7 +35,7 @@ export const Heading = ()=>{
                 <Link className="nav-link" to ='/Myprofile'>My Profile</Link>
             </li>
             <li className="nav-item">
-               <Link className="nav-link" to ='/cart'>Cart:</Link>
+               <Link className="nav-link" to ='/cart'>Cart:{cartval}</Link>
             </li>
           </ul>
           

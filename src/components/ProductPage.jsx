@@ -19,7 +19,7 @@ const fetchProductPageData = async ()=> {
 }
 
 return (
-
+    
     <ProductPagecard productPagecardData={productpageData}/>
 
  )
