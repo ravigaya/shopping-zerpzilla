@@ -5,7 +5,10 @@ const Categorycard = ({category}) => {
     <div  style={{padding:'10px'}}>
     <div className="card" style={{ width: "18rem"  }}>
       <div className="card-body">
-        <a href="#" className="btn btn-primary">{category}</a>
+        <button className='btn-solid'>
+              {category}
+        </button>
+        
       </div>
     </div>
     </div>

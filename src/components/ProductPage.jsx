@@ -21,7 +21,7 @@ const fetchProductPageData = async ()=> {
 return (
     
     <ProductPagecard productPagecardData={productpageData}/>
-
+    
  )
 }
 export default ProductPage

@@ -7,13 +7,11 @@ function Searchbar({onClick}) {
 
    const[query,setQuery] = useState('');
 
-
    const handleInputSearch = (event)=>{
       const value = event.target.value;    
        setQuery(value);
         // onChange(value); 
-        console.log(value)
-            
+        console.log(value);            
    }
 
    const handleClick = ()=>{

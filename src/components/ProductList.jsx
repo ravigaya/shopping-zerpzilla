@@ -43,7 +43,7 @@ const ProductList = () => {
   return  (
     <>
     <div className='py-2 px-3 mx-3 my-4'>
-    <Searchbar onChange={handleSearch}/>
+    <Searchbar onClick={handleSearch}/>
       
     </div>
       {

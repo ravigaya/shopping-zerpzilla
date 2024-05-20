@@ -4,6 +4,7 @@ const cartdata = createContext({
     cartval :1
 })
 
+
 export  default cartdata;
 
 // import React, { createContext, useState } from "react";

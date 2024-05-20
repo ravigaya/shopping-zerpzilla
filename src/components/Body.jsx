@@ -22,6 +22,7 @@ export const Body =()=> {
   useEffect(()=>{
     fetchData()
   },[])
+  
   // useEffect(()=>{
   //   console.log('Its useeffect called')
     
