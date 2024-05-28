@@ -1,0 +1,50 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "iPhone 12",
+      "brand": "Apple",
+      "price": 999,
+      "description": "The latest iPhone with A14 Bionic chip and Super Retina XDR display.",
+      "createdAt": "2024-05-15T12:00:00Z"
+    },
+    {
+      "id": "2",
+      "name": "Galaxy S21",
+      "brand": "Samsung",
+      "price": 799,
+      "description": "Samsung's flagship smartphone featuring a stunning 120Hz AMOLED display.",
+      "createdAt": "2024-05-15T12:00:00Z"
+    },
+    {
+      "id": "6",
+      "name": "Mi 11 Ultra",
+      "brand": "Xiaomi",
+      "price": 1199,
+      "description": "Xiaomi's flagship with Snapdragon 888 processor and massive camera setup.",
+      "createdAt": "2024-05-15T12:00:00Z"
+    },
+    {
+      "id": "9",
+      "name": "ROG Phone 5",
+      "brand": "ASUS",
+      "price": 999,
+      "description": "Gaming smartphone with Snapdragon 888+ processor and 144Hz AMOLED display.",
+      "createdAt": "2024-05-15T12:00:00Z"
+    },
+    {
+      "id": "e1c6",
+      "name": "iphone 15",
+      "brand": "Dell",
+      "price": "111111",
+      "description": "hj   bhguhgub nhjhjhjn jknjkhkjhjn jknjkhjkhjkh"
+    },
+    {
+      "id": "8ddf",
+      "name": "hdyds7ydsdh",
+      "brand": "skjdnskndksnd",
+      "price": "12212",
+      "description": "This random product"
+    }
+  ]
+}

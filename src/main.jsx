@@ -13,10 +13,11 @@ import Body from './components/Body.jsx'
 import ProductList from './components/ProductList.jsx'
 import Cart from './components/Cart.jsx'
 import Homepage from './components/Homepage.jsx'
-
-
-//import Myprofile from './components/Myprofile.jsx'
-//import Travel from './components/Travel.jsx'
+import ProductPage from './components/ProductPage.jsx'
+import {Inventry} from './components/Inventry.jsx'
+import { CreateInventry } from './components/CreateInventry.jsx'
+import UpdateInventry from './components/UpdateInventry.jsx'
+import DeleteInventry from './components/DeleteInventry.jsx'
 
 const Myprofile = lazy(()=>import('./components/Myprofile.jsx'))
 const router = createBrowserRouter([
@@ -45,7 +46,30 @@ const router = createBrowserRouter([
         path: "/products/:category",
         element: <ProductList/>,
       },
-    
+      {
+        path: "/cart",
+        element: <Cart/>
+      },
+      {
+        path: "/product/:id",
+        element: <ProductPage/>,
+      },
+      {
+        path: "/inventry",
+        element: <Inventry/>,
+      },
+      {
+        path: "/creteinventory",
+        element: <CreateInventry/>,
+      },
+      {
+        path: "/updateinventry/:id",
+        element:<UpdateInventry/>,
+      },
+      {
+        path: "/deleteinventry/:id",
+        element: <DeleteInventry/>,
+      },
     ],
     errorElement: <Error/>
   },
